@@ -1,0 +1,137 @@
+.generalbox h1,h2,h3,h4 {
+	margin: 10px 5px;
+	text-align:center;
+	color: #495525;
+	font-size: 120%;
+}
+
+.generalbox p {
+	margin:10px 5px;
+}
+
+.generalbox ul {
+	margin: 10px 0;
+}
+
+.generalbox ul li {
+	margin-left:25px;
+	list-style: none;	
+}
+
+.generalbox ul li:before {
+      /* For a round bullet */
+      content:'\2022';
+      /* For a square bullet */
+      /*content:'\25A0';*/
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -20px;
+      top: -0px;
+      color: #77A240;
+      /*font-size: 10px;*/
+    }
+ 
+.generalbox ol {
+	margin: 10px 0;
+}
+
+.generalbox ol li {
+	margin-left:25px;
+}
+
+.generalbox a {
+	color: #495525;
+	text-decoration: underline;
+}
+
+.generalbox table {
+	border:1px solid #000;
+	width:100%;
+	border-collapse: collapse;
+}
+
+.generalbox table th {
+ font-weight: bold;
+ background: #77A240;
+ padding: 0.5em;
+ border-bottom: 1px solid #000;
+ border-right: 1px solid #000;
+}
+
+.generalbox table td {
+	padding: 0.5em;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+.generalbox .box {
+	margin:10px 5px;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #888;
+	border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	min-height:25px;
+}
+
+.generalbox .definition, 
+.generalbox .action,
+.generalbox .warning,
+.generalbox .suggestion, 
+.generalbox .info,
+.generalbox .question {
+	padding: 10px 10px 10px 40px;
+	background-repeat: no-repeat;
+}
+.generalbox .definition{
+	background-image: url('../../../digitalcampus/pix/oppia/book.png'); 
+}
+
+.generalbox .action {
+	background-image: url('../../../digitalcampus/pix/oppia/tick.png'); 
+}
+
+.generalbox .warning {
+	background-image: url('../../../digitalcampus/pix/oppia/warning.png'); 
+	font-weight:bold;
+}
+
+.generalbox .suggestion, .generalbox .info {
+	background-image: url('../../../digitalcampus/pix/oppia/info.png'); 
+}
+
+.generalbox .question {
+	background-image: url('../../../digitalcampus/pix/oppia/question.png'); 
+}
+
+.generalbox div.question > p:first-child {
+	font-weight:bold;
+}
+
+.generalbox div.question > p {
+	margin: 0 10px 10px 0;
+}
+
+.generalbox .reveal {
+	text-decoration: underline;
+	color: #495525;
+	cursor: pointer;
+}
+
+.generalbox img {
+	text-align:center;
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.generalbox .credit, .generalbox .caption {
+	font-size: 80%;
+	margin: 3px 0 10px 0;
+	text-align:center;
+	line-height: 1.2em;
+	color:#666;
+	font-style:italic;
+}

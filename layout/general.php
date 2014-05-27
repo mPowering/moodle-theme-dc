@@ -31,8 +31,11 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
+    <script type="text/javascript" src="<?php echo $CFG->wwwroot; ?>/blocks/oppia_mobile_export/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo $CFG->wwwroot; ?>/blocks/oppia_mobile_export/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="<?php echo $CFG->wwwroot; ?>/blocks/oppia_mobile_export/js/oppia.js"></script>
 </head>
-<body id="<?php echo $PAGE->bodyid ?>" class="<?php echo $PAGE->bodyclasses.' '.join(' ', $bodyclasses) ?>">
+<body id="<?php echo $PAGE->bodyid ?>" class="<?php echo $PAGE->bodyclasses.' '.join(' ', $bodyclasses) ?>" onload="init()">
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 <div id="page">
 <?php if ($hasheading || $hasnavbar) { ?>
