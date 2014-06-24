@@ -76,6 +76,12 @@
 	min-height:25px;
 }
 
+.generalbox .activity, 
+.generalbox .core,
+.generalbox .casestudy {
+
+}
+
 .generalbox .definition, 
 .generalbox .action,
 .generalbox .warning,
@@ -85,25 +91,25 @@
 	padding: 10px 10px 10px 40px;
 	background-repeat: no-repeat;
 }
-.generalbox .definition{
-	background-image: url('../../../digitalcampus/pix/oppia/book.png'); 
+.generalbox .definition{ 
+	background-image: url([[pix:theme|oppia/book]]);
 }
 
 .generalbox .action {
-	background-image: url('../../../digitalcampus/pix/oppia/tick.png'); 
+	background-image: url([[pix:theme|oppia/tick]]);
 }
 
 .generalbox .warning {
-	background-image: url('../../../digitalcampus/pix/oppia/warning.png'); 
+	background-image: url([[pix:theme|oppia/warning]]) ;
 	font-weight:bold;
 }
 
 .generalbox .suggestion, .generalbox .info {
-	background-image: url('../../../digitalcampus/pix/oppia/info.png'); 
+	background-image: url([[pix:theme|oppia/info]]);
 }
 
 .generalbox .question {
-	background-image: url('../../../digitalcampus/pix/oppia/question.png'); 
+	background-image: url([[pix:theme|oppia/question]]);
 }
 
 .generalbox div.question > p:first-child {
