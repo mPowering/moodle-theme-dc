@@ -88,8 +88,9 @@
 .generalbox .suggestion, 
 .generalbox .info,
 .generalbox .question {
-	padding: 10px 10px 10px 40px;
+	padding: 10px 10px 5px 60px;
 	background-repeat: no-repeat;
+	min-height: 60px;
 }
 .generalbox .definition{ 
 	background-image: url([[pix:theme|oppia/book]]);
