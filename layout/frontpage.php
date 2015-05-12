@@ -43,9 +43,7 @@ echo $OUTPUT->doctype() ?>
             if ($haslogininfo) {
                 echo $OUTPUT->login_info();
             }
-            if (!empty($PAGE->layout_options['langmenu'])) {
-                echo $OUTPUT->lang_menu();
-            }
+            echo $OUTPUT->lang_menu();
             echo $PAGE->headingmenu
         ?></div><?php } ?>
         <?php if ($hascustommenu) { ?>
