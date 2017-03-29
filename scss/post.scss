@@ -1,4 +1,5 @@
 // Post SCSS for the theme.
+
 body{
     background-color: #f7f7f7;
 }
@@ -28,3 +29,27 @@ body{
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
     }
 }
+
+button[data-action="toggle-drawer"]{
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 0 !important;
+}
+button[data-action="toggle-drawer"]:hover{
+    background: $oppia-light;
+}
+header.navbar{
+    background-color: $oppia-mid;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    border-bottom: none;
+    a.dropdown-toggle{ color:#fff; }
+    .nav-link > .icon{ 
+        background: $oppia-lighter;
+        padding: 6px;
+        margin-top: -3px;
+        border-radius: 100%;
+    }
+}
+
