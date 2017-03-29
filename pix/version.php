@@ -14,12 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Photo backgrounds.
+ *
+ * @package    theme_oppias
+ * @copyright  2016 Damyon Wiese
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 // This line protects the file from being accessed by a URL directly.
 defined('MOODLE_INTERNAL') || die();
 
 // This is the version of the plugin.
-$plugin->version = 2017023292;
+$plugin->version = 2017022002;
 
 // This is the version of Moodle this plugin requires.
 $plugin->requires = 2016112900.00;
