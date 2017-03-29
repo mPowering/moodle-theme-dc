@@ -30,6 +30,17 @@ body{
     }
 }
 
+.dropdown-menu, .popover-region-container{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0, 45, 0, 0.2);
+}
+.dropdown-item{
+    transition: .4s ease-out;
+
+    &:hover a{
+        color: $oppia-mid;
+        text-decoration: none;
+    }
+}
 button[data-action="toggle-drawer"]{
     background: transparent;
     border: none;
@@ -53,3 +64,53 @@ header.navbar{
     }
 }
 
+[data-region="drawer"]{
+    padding: 0;
+    .m-t-1{ 
+        margin-top: 0 !important;
+        padding-top: 0.2rem;
+        background-color: $oppia-light;
+    }
+    .m-t-1:last-child{
+        box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 767px){
+    [data-region="drawer"]{
+        box-shadow: 7px 0 25px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.list-group-item{
+    border:none;
+    padding: 0 1.25rem;
+    margin-bottom: 0;
+    transition: .4s ease-out;
+
+    &:hover{ color: $oppia-mid; }
+    &:first-child, &:last-child { border-radius: 0;  }
+    & :last-child .m-l-0 { border-bottom-color: #fff; }
+}
+.m-l-0{
+    padding: 0.95rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#page-header{
+    .card{
+        background: none;
+        border:none;
+    }
+    .card-block{
+        padding: 0;
+        padding-top:1.7rem;
+    }
+    .dropdown-toggle > .icon{ height: 32px; }
+}
+.block-region .card{
+    border:none;
+    border-radius: 2px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
