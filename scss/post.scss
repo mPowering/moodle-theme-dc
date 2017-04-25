@@ -42,6 +42,28 @@ body{
         text-decoration: none;
     }
 }
+.course_category_tree .category > .info > .categoryname{ padding: 8px 18px; }
+h3.categoryname, h4.categoryname{ 
+    border-bottom: 1px solid #efefef;
+    transition: 700ms all;
+    &:hover{
+        background-color:#efefef;
+    }
+}
+h3.categoryname{ font-size: 1.45rem; }
+h4.categoryname{ font-size: 1.35rem; }
+.numberofcourse::first-letter{ color:#ff0000; }
+.numberofcourse{
+    font-size: .875rem;
+    background-color: #888;
+    padding: 3px 6px 3px 3px;
+    color: #fff;
+    border-radius: 6px; }
+#frontpage-category-names h2{     
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: bolder;  
+}
 button[data-action="toggle-drawer"]{
     background: transparent;
     border: none;
