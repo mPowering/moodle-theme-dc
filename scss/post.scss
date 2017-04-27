@@ -42,6 +42,11 @@ body{
         text-decoration: none;
     }
 }
+#page-site-index {
+    .page-header-headings{ display: none; }
+    #page-header .card-block { padding-top: 0.8rem;  }
+    &.notloggedin #page-header .card-block{ display: none; }
+}
 .site-name{ margin-left:0.4em; }
 .course_category_tree .category > .info > .categoryname{ padding: 8px 18px; }
 h3.categoryname, h4.categoryname{ 
@@ -59,6 +64,7 @@ h4.categoryname{ font-size: 1.35rem; }
     background-color: #888;
     padding: 3px 6px 3px 3px;
     color: #fff;
+    margin-left: 9px;
     border-radius: 6px; }
 #frontpage-category-names h2{     
     font-size: 1.15em;
