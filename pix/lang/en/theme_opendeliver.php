@@ -36,7 +36,7 @@ $string['brandcolor_desc'] = 'The accent colour.';
 // A description shown in the admin theme selector.
 $string['choosereadme'] = 'Theme photo is a child theme of Boost.';
 // Name of the settings pages.
-$string['configtitle'] = 'Oppia theme settings';
+$string['configtitle'] = 'Open Deliver theme settings';
 // Background image for dashboard page.
 $string['dashboardbackgroundimage'] = 'Dashboard page background image';
 // Background image for dashboard page.
@@ -60,7 +60,7 @@ $string['loginbackgroundimage'] = 'Login page background image';
 // Background image for login page.
 $string['loginbackgroundimage_desc'] = 'An image that will be stretched to fill the background of the login page.';
 // The name of our plugin.
-$string['pluginname'] = 'Oppia';
+$string['pluginname'] = 'Open Deliver';
 // Preset files setting.
 $string['presetfiles'] = 'Additional theme preset files';
 // Preset files help text.

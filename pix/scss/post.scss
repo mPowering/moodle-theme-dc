@@ -12,7 +12,7 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 .btn-primary:hover{
-    background: $oppia-light;
+    background: $opendeliver-light;
 }
 
 #page .btn:not(.p-a-0), #page .btn-large, #page .btn-floating, .submitbuttons .btn{
@@ -40,7 +40,7 @@ body{
     transition: .4s ease-out;
 
     &:hover a{
-        color: $oppia-mid;
+        color: $opendeliver-mid;
         text-decoration: none;
     }
 }
@@ -52,15 +52,15 @@ button[data-action="toggle-drawer"]{
     margin-right: 0 !important;
 }
 button[data-action="toggle-drawer"]:hover{
-    background: $oppia-light;
+    background: $opendeliver-light;
 }
 header.navbar{
-    background-color: $oppia-mid;
+    background-color: $opendeliver-mid;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     border-bottom: none;
     a.dropdown-toggle{ color:#fff; }
     .nav-link > .icon{ 
-        background: $oppia-lighter;
+        background: $opendeliver-lighter;
         padding: 6px;
         margin-top: -3px;
         border-radius: 100%;
@@ -72,7 +72,7 @@ header.navbar{
     .m-t-1{ 
         margin-top: 0 !important;
         padding-top: 0.2rem;
-        background-color: $oppia-light;
+        background-color: $opendeliver-light;
     }
     .m-t-1:last-child{
         box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.2);
@@ -91,7 +91,7 @@ header.navbar{
     margin-bottom: 0;
     transition: .4s ease-out;
 
-    &:hover{ color: $oppia-mid; }
+    &:hover{ color: $opendeliver-mid; }
     &:first-child, &:last-child { border-radius: 0;  }
     & :last-child .m-l-0 { border-bottom-color: #fff; }
 }
