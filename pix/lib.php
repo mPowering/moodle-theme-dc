@@ -55,9 +55,9 @@ function theme_opendeliver_get_main_scss_content($theme) {
     }
 
     // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.
-    $pre = file_get_contents($CFG->dirroot . '/theme/oppia/scss/pre.scss');
+    $pre = file_get_contents($CFG->dirroot . '/theme/opendeliver/scss/pre.scss');
     // Post CSS - this is loaded AFTER the main scss but before the extra scss from the setting.
-    $post = file_get_contents($CFG->dirroot . '/theme/oppia/scss/post.scss');
+    $post = file_get_contents($CFG->dirroot . '/theme/opendeliver/scss/post.scss');
 
     // Combine them together.
     return $pre . "\n" . $scss . "\n" . $post;
@@ -93,13 +93,13 @@ function theme_opendeliver_update_settings_images($settingname) {
     $fullpath = "/{$syscontext->id}/{$component}/{$settingname}/0{$filename}";
 
     // This location matches the searched for location in theme_config::resolve_image_location.
-    $pathname = $CFG->dataroot . '/pix_plugins/theme/oppia/' . $settingname . '.' . $extension;
+    $pathname = $CFG->dataroot . '/pix_plugins/theme/opendeliver/' . $settingname . '.' . $extension;
 
     // This pattern matches any previous files with maybe different file extensions.
-    $pathpattern = $CFG->dataroot . '/pix_plugins/theme/oppia/' . $settingname . '.*';
+    $pathpattern = $CFG->dataroot . '/pix_plugins/theme/opendeliver/' . $settingname . '.*';
 
     // Make sure this dir exists.
-    @mkdir($CFG->dataroot . '/pix_plugins/theme/oppia/', $CFG->directorypermissions, true);
+    @mkdir($CFG->dataroot . '/pix_plugins/theme/opendeliver/', $CFG->directorypermissions, true);
 
     // Delete any existing files for this setting.
     foreach (glob($pathpattern) as $filename) {
