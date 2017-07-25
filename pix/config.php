@@ -17,7 +17,7 @@
 /**
  * Photo config.
  *
- * @package   theme_oppia
+ * @package   theme_opendeliver
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -69,5 +69,5 @@ $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 // This is the function that returns the SCSS source for the main file in our theme. We override the boost version because
 // we want to allow presets uploaded to our own theme file area to be selected in the preset list.
 $THEME->scss = function($theme) {
-    return theme_oppia_get_main_scss_content($theme);
+    return theme_opendeliver_get_main_scss_content($theme);
 };

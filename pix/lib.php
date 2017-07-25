@@ -17,7 +17,7 @@
 /**
  * Photo backgrounds callbacks.
  *
- * @package    theme_oppias
+ * @package    theme_opendelivers
  * @copyright  2016 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die();
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_oppia_get_main_scss_content($theme) {
+function theme_opendeliver_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -46,8 +46,8 @@ function theme_oppia_get_main_scss_content($theme) {
         // We still load the default preset files directly from the boost theme. No sense in duplicating them.
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/plain.scss');
 
-    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_oppia', 'preset', 0, '/', $filename))) {
-        // This preset file was fetched from the file area for theme_oppia and not theme_boost (see the line above).
+    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_opendeliver', 'preset', 0, '/', $filename))) {
+        // This preset file was fetched from the file area for theme_opendeliver and not theme_boost (see the line above).
         $scss .= $presetfile->get_content();
     } else {
         // Safety fallback - maybe new installs etc.
@@ -69,10 +69,10 @@ function theme_oppia_get_main_scss_content($theme) {
  *
  * @param $settingname
  */
-function theme_oppia_update_settings_images($settingname) {
+function theme_opendeliver_update_settings_images($settingname) {
     global $CFG;
 
-    // The setting name that was updated comes as a string like 's_theme_oppia_loginbackgroundimage'.
+    // The setting name that was updated comes as a string like 's_theme_opendeliver_loginbackgroundimage'.
     // We split it on '_' characters.
     $parts = explode('_', $settingname);
     // And get the last one to get the setting name..
@@ -81,7 +81,7 @@ function theme_oppia_update_settings_images($settingname) {
     // Admin settings are stored in system context.
     $syscontext = context_system::instance();
     // This is the component name the setting is stored in.
-    $component = 'theme_oppia';
+    $component = 'theme_opendeliver';
 
 
     // This is the value of the admin setting which is the filename of the uploaded file.
